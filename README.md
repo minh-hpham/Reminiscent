@@ -3,11 +3,30 @@ An electron application to allow user get their personal gmails and train them t
 
 ## Need to develop: 
 ```
-Parsing requested emails: The body (content) of the requested emails are in encoded format. The current code sometimes fails to find the body, therefore cannot decode the body. Both the Python and NodeJS codes have this issue
-UI: emails are shown in the order in the json file. Therefore, the seen emails are still on the top of the email list. Also, user can't see which emails they liked before
-Learn user’s feedback: the current learn mechanism is based on the senders and subjects. The next step is to learn from the email’s content. The text content can be found in the text/plain part of the email’s body
-Scalability: The current UI fails to load more than 1000 emails. I propose the solution of loading only N emails every time the window is reload. This approach requires the caching of which emails have been seen. 
-Database: data are saved in json files in the local storage. Reading and writing from json files will take linear time. Using database is highly appreciated, especially for NodeJS code to read and write data.
+# Parsing requested emails: 
+The body (content) of the requested emails are in encoded format. 
+The current code sometimes fails to find the body, 
+therefore cannot decode the body. Both the Python and NodeJS codes have this issue
+
+# UI: 
+emails are shown in the order in the json file. 
+Therefore, the seen emails are still on the top of the email list. 
+Also, user can't see which emails they liked before
+
+# Learn user’s feedback: 
+the current learn mechanism is based on the senders and subjects. 
+The next step is to learn from the email’s content. 
+The text content can be found in the text/plain part of the email’s body
+
+# Scalability: 
+The current UI fails to load more than 1000 emails. 
+I propose the solution of loading only N emails every time the window is reload. 
+This approach requires the caching of which emails have been seen. 
+
+# Database: 
+data are saved in json files in the local storage. 
+Reading and writing from json files will take linear time. 
+Using database is highly appreciated, especially for NodeJS code to read and write data.
 ```
 
 ## The structure of this project is
